@@ -9,7 +9,7 @@ I'm a computer scientist, mathematician and software engineer.  My research focu
 Currently I'm looking for scientific programming and numerical computing positions in the Boulder or Denver, CO area.
 
  * [Publications](/publications/)
- * [Github projects list](/github-projects/)
+ * [Github projects list](/projects/)
  * [CV](/assets/pdf/MarkJOlah_CV.pdf)
 
 # Featured Projects
