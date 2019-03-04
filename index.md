@@ -1,7 +1,7 @@
 ---
 layout: home
 author_profile: true
-title: about me
+title: About Me
 ---
 
 I'm a computer scientist, mathematician and software engineer.  My research focuses on high-performance computational software for data processing, machine learning, statistical parameter inference, and stochastic simulation in scientific applications.
