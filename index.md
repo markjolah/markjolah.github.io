@@ -1,9 +1,9 @@
 ---
 layout: home
 author_profile: true
+title: about me
 ---
 
-# Objective
 I'm a computer scientist, mathematician and software engineer.  My research focuses on high-performance computational software for data processing, machine learning, statistical parameter inference, and stochastic simulation in scientific applications.
 
 Currently I'm looking for scientific programming and numerical computing positions in the Boulder or Denver, CO area.
