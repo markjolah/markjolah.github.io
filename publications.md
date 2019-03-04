@@ -15,12 +15,12 @@ permalink: /publications/
 ## Maximum likelihood estimation of Diffusion constant from noisy intermittent trajectories
  * Peter K. Relich, **Mark J. Olah**, Patrick J. Cutler, and Keith A. Lidke. *Estimation of the diffusion constant from intermittent trajectories with variable position uncertainties*. Physical Review E, 93. (2016) 042401. [[Phys. Rev. E]](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.93.042401) [[arXiv]](https://arxiv.org/abs/1508.02309)
 
- This paper describes the math behind the [DEstimator](https://markjolah.github.io/DEstimator) library, which provides a maximum-likelihood-based parameter estimator for accurately estimating the diffusion constant of particles from noisy intermittent observations.  Our method takes into account Gaussian noise in the observations convolved with the motion-blur effect inherent from the frame integration
+ This paper describes the math behind the [DEstimator](https://markjolah.github.io/DEstimator) library, which provides a maximum-likelihood-based parameter estimator for accurately estimating the diffusion constant of particles from noisy intermittent observations.  Our method takes into account Gaussian noise in the observations convolved with the motion-blur effect inherent from the frame integration.  The DEstimator uses OpenMP to parallelize the log-likelihood computations over a range of diffusion constants, and is an order of magnitude faster than competing algorithms.
 
 <p align="center">
-<img alt="DEstimator example trajectory" src="/assets/images/destimator_traj.png" width="200"/>
-<img alt="DEstimator estimation accuracy" src="/assets/images/destimator_acc.png" width="350"/>
-<img alt="DEstimator speed comparison" src="/assets/images/destimator_speed.png" width="450"/>
+<a href="/assets/images/destimator_traj.png" title="full size image"><img alt="DEstimator example trajectory" src="/assets/images/destimator_traj.png" width="200"/></a>
+<a href="/assets/images/destimator_acc.png" title="full size image"><img alt="DEstimator estimation accuracy" src="/assets/images/destimator_acc.png" width="325"/></a>
+<a href="/assets/images/destimator_speed.png" title="full size image"><img alt="DEstimator speed comparison" src="/assets/images/destimator_speed.png" width="400"/></a>
 </p>
 
 ## Stochastic simulation of nano-scale molecular motors and chemical reactions.
@@ -29,7 +29,7 @@ permalink: /publications/
 * **Mark J. Olah** and Darko Stefanovic. *Multivalent random walkers: A model for deoxyribozyme walkers.* In *DNA Computing and Molecular Programming*, Vol.~6937 of *Lecture Notes in Computer Science*. Springer Berlin /Heidelberg. (2011) 160--174. [[Springer]](https://link.springer.com/chapter/10.1007%2F978-3-642-23638-9_14)
 
 <p align="center">
-<img alt="Molcular spider simulation experiment" src="/assets/images/spiders_experiment.png" width="800"/>
+<a href="/assets/images/spiders_experiment.png" title="full size image"><img alt="Molcular spider simulation experiment" src="/assets/images/spiders_experiment.png" width="800"/></a>
 </p>
 
 ## Distributed data storage with object persistence using object-relational mapping

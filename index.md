@@ -3,6 +3,7 @@ layout: home
 author_profile: true
 ---
 
+# Objective
 I'm a computer scientist, mathematician and software engineer.  My research focuses on high-performance computational software for data processing, machine learning, statistical parameter inference, and stochastic simulation in scientific applications.
 
 Currently I'm looking for scientific programming and numerical computing positions in the Boulder or Denver, CO area.
@@ -19,7 +20,7 @@ Currently I'm looking for scientific programming and numerical computing positio
  * [Mappel project site](https://markjolah.github.io/Mappel)
  * [Mappel github repository](https://github.co/markjolah/Mappel)
 
-Point emitter localization is an essential image-processing sub-problem in many single-molecule microscopy applications.  Mappel can fit millions of emitter images in parallel in just a few seconds, making it orders of magnitude faster than other maximum-likelihood-based point estimation software.  Mappel achieves optimal estimation accuracy using robust, state-of-the art non-linear bounded optimization algorithms for maximum likelihood and maximum a posteriori estimation, as well as Markov-chain Monte Carlo posterior sampling for Bayesian inference.  These parameter estimation techniques allow for Mappel to estimate confidence regions using [expected Fisher information](https://en.wikipedia.org/wiki/Fisher_information), [observed Fisher information](https://en.wikipedia.org/wiki/Observed_information), likelihood-ratio-based [profile likelihood intervals](https://en.wikipedia.org/wiki/Likelihood_function#Profile_likelihood), or with [Bayesian credible interval methods](https://en.wikipedia.org/wiki/Credible_interval).
+Point emitter localization is an essential image-processing sub-problem in many single-molecule microscopy applications.  Mappel can fit millions of emitter images in parallel in just a few seconds, making it orders of magnitude faster than other maximum-likelihood-based point estimation software.  Mappel achieves optimal estimation accuracy using robust, state-of-the art non-linear bounded optimization algorithms for maximum likelihood and maximum *a posteriori* estimation, as well as Markov-chain Monte Carlo posterior sampling for Bayesian inference.  These parameter estimation techniques allow Mappel to estimate confidence regions using [expected Fisher information](https://en.wikipedia.org/wiki/Fisher_information), [observed Fisher information](https://en.wikipedia.org/wiki/Observed_information), likelihood-ratio-based [profile likelihood intervals](https://en.wikipedia.org/wiki/Likelihood_function#Profile_likelihood), or with [Bayesian credible interval methods](https://en.wikipedia.org/wiki/Credible_interval).
 
 Mappel is cross-platform (Linux/Win64) with object oriented interfaces for C++, Python, and Matlab, and GUI interfaces for interactive workflows and debugging.
 
@@ -35,33 +36,40 @@ Mappel is cross-platform (Linux/Win64) with object oriented interfaces for C++, 
 Top-level RPT component software projects:
  * Emitter detection: [Boxxer](https://github.com/markjolah/Boxxer)
  * Localization: [Mappel](https://markjolah.github.io/Mappel)
- * Trajectory connection: [Tracker](https://github.com/markjolah/Tracker)
+ * Trajectory connection: [Tracker](https://markjolah.github.io/Tracker)
 
 Publications using RPT software:
  * Samantha L. Schwartz, Cedric Cleyrat,  **Mark J. Olah**, Peter K. Relich, Genevieve K. Phillips, William S. Hlavacek, Keith A. Lidke, Bridget S. Wilson, and Diane S. Lidke. *Differential mast cell outcomes are sensitive to Fc&#949;RI-Syk binding kinetics*.  Molecular Biology of the Cell, 28(23). (2017)  [MBoC](https://www.molbiolcell.org/doi/full/10.1091/mbc.E17-06-0350) [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/28855374)
 
 
 <p align="center">
-<a href="/assets/images/rpt_spdata_gui.png" title="full size image"><img alt="Spdata GUI" src="/assets/images/rpt_spdata_gui.png" width="350"/></a>
-<a href="/assets/images/rpt_gui.png" title="full size image"><img alt="RPT GUI" src="/assets/images/rpt_gui.png" width="350"/></a>
-<a href="/assets/images/rpt_tsa.png" title="full size image"><img alt="RPT Trajectory Segment Analysis tools" src="/assets/images/rpt_tsa.png" width="300"/></a>
+<a href="/assets/images/rpt_spdata_gui.png" title="full size image"><img alt="Spdata GUI" src="/assets/images/rpt_spdata_gui.png" width="325"/></a>
+<a href="/assets/images/rpt_gui.png" title="full size image"><img alt="RPT GUI" src="/assets/images/rpt_gui.png" width="325"/></a>
+<a href="/assets/images/rpt_tsa.png" title="full size image"><img alt="RPT Trajectory Segment Analysis tools" src="/assets/images/rpt_tsa.png" width="275"/></a>
 
 </p>
 
 ## MexIFace - Cross-platform C++ / Malab object-oriented MEX interface library and CMake build system
 [![MexIFace structure](/assets/images/mexiface_diagram.png){:width="450px"}{:style="float: right;margin-right: 7px;margin-top: 7px;"}](/assets/images/mexiface_diagram.png)
-The [MexIFace](https://markjolah.github.io/MexIFace) library class provides a flexible means of wrapping a complex C++ library into a Matlab class via Matlab's MEX function extension method.  Ordinary Matlab C/C++ plugins are called MEX libraries and can only provide a simple function interface.  Interfaces using the [`MexIFace`](https://markjolah.github.io/MexIFace/classmexiface_1_1MexIFace.html) base class present a full object-oriented interface.  These hybrid C++/Matlab objects have Matlab methods and properties that effect state and perform computations in C++.  MexIFace is primarily designed to support high-performance numerical code, uses the [Armadillo](http://arma.sourceforge.net/docs.html) matrix libraries to provide a rich C++ object model while also allowing direct access to data stored in matlab array objects.  MexIFace supports OpenMP parallelization and integration with the 64-bit BLAS and LAPACK libraries required by Matlab.
+The [MexIFace](https://markjolah.github.io/MexIFace) library class provides a flexible means of wrapping a complex C++ library into a Matlab class via Matlab's MEX function extension method.  Ordinary Matlab C/C++ plugins are called MEX libraries and can only provide a simple function interface.
+
+Interfaces using the [`MexIFace`](https://markjolah.github.io/MexIFace/classmexiface_1_1MexIFace.html) base class emulate a full object-based interface.  These hybrid C++/Matlab objects have Matlab methods and properties that effect state and perform computations in C++.
+
+MexIFace is primarily designed to support high-performance numerical code, and uses the [Armadillo](http://arma.sourceforge.net/docs.html) matrix libraries to provide a computationally rich C++ object model while also allowing direct access to data stored in matlab array objects.  MexIFace supports OpenMP parallelization and detection and linking of 64-bit integer versions of BLAS and LAPACK libraries as required by Matlab.
+ * [MexIFace project site](https://markjolah.github.io/MexIFace)
+ * [MexIFace github repository](https://github.com/markjolah/MexIFace#mexiface-)
 
 
 ## Tumble
 **T**riangular **U**nstructured **M**esh with **B**ezier elements in a **L**agrangian **E**nvironment
 ![Tumble](/assets/images/tumble.png)
 
-Tumble is an experimental gemometrical framework for fully [Lagrangian](https://en.wikiversity.org/wiki/Nonlinear_finite_elements/Lagrangian_and_Eulerian_descriptions) finite element, [Navier-Stokes](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) fluid flow simulation.  In a Lagrangian mesh, the elements move with the fluid they represent.  This causes them to deform over time.  We handle this by using curved elements with [Bezier](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) edges.  The TUMBLE package is responsible for moving the mesh elements, and running a sequence of cleaning phases to maintain mesh quality.  This includes flipping and re-interpolating elements to maintain the [Delaunay property](https://en.wikipedia.org/wiki/Delaunay_triangulation).
+Tumble is an mesh-geometry framework for fully [Lagrangian](https://en.wikiversity.org/wiki/Nonlinear_finite_elements/Lagrangian_and_Eulerian_descriptions) finite element, [Navier-Stokes](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) fluid flow simulation.  In a Lagrangian mesh, the elements move with the fluid they represent.  This causes them to deform over time.  We handle this by using curved elements with [Bezier](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) edges.  The TUMBLE package is responsible for moving the mesh elements, and running a sequence of cleaning phases to maintain mesh quality.  This includes flipping and re-interpolating elements to maintain the [Delaunay property](https://en.wikipedia.org/wiki/Delaunay_triangulation).
 
- * Part of the [Sangria Project](http://www.cs.cmu.edu/~sangria/) at Carnegie Mellon, which encompassed several research groups targeting advanced parallel geometric and numerical algorithms and software for simulating complex flows with dynamic interfaces.  Particularly
- * [Tumble Project site](http://www.cs.cmu.edu/~sangria/tumble/index.html)
- * [Tumble Documentation](http://www.cs.cmu.edu/~sangria/tumble/doc/index.html)
- * David E. Cardoze, Gary L. Miller, **Mark Olah**, Todd Phillips.  [*A Bezier-based moving mesh framework for simulation with elastic membranes.*](https://imr.sandia.gov/papers/abstracts/Ca314.html) Proceedings of the 13th International Meshing Roundtable. (2004) 71--79.
+* Part of the [Sangria Project](http://www.cs.cmu.edu/~sangria/) at Carnegie Mellon, which encompassed several research groups targeting advanced parallel geometric and numerical algorithms and software for simulating complex flows with dynamic interfaces.
+* [Tumble Project site](http://www.cs.cmu.edu/~sangria/tumble/index.html)
+* [Tumble Documentation](http://www.cs.cmu.edu/~sangria/tumble/doc/index.html)
+* Publications:
+    * David E. Cardoze, Gary L. Miller, **Mark Olah**, Todd Phillips.  [*A Bezier-based moving mesh framework for simulation with elastic membranes.*](https://imr.sandia.gov/papers/abstracts/Ca314.html) Proceedings of the 13th International Meshing Roundtable. (2004) 71--79.
 
 
