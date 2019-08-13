@@ -4,13 +4,12 @@ author_profile: true
 title: About Me
 ---
 
-I'm a computer scientist, mathematician and software engineer.  My research focuses on high-performance computational software for data processing, machine learning, statistical parameter inference, and stochastic simulation in scientific applications.
+I'm a computer scientist, mathematician and software engineer.  My research has previously focused on high-performance computational software for data processing, machine learning, statistical parameter inference, and stochastic simulation in scientific applications.
 
-Currently I'm looking for scientific programming and numerical computing positions in the Boulder or Denver, CO area.
+Currently I'm a Software engineer at the of the [(JCSDA) Joint Center for Satellite Data Assimilation](https://www.jcsda.org/).
 
  * [Publications](/publications/)
  * [Github projects list](/projects/)
- * [CV](/assets/pdf/MarkJOlah_CV.pdf)
 
 # Featured Projects
 ## Mappel - **M**aximum **A** **P**osteriori **P**oint **E**mitter **L**ocalization
