@@ -6,7 +6,7 @@ title: About Me
 
 I'm a computer scientist, mathematician and software engineer.  My research has previously focused on high-performance computational software for data processing, machine learning, statistical parameter inference, and stochastic simulation in scientific applications.
 
-Currently I'm a Software engineer at the of the [(JCSDA) Joint Center for Satellite Data Assimilation](https://www.jcsda.org/).
+Currently I'm a software engineer at the [(JCSDA) Joint Center for Satellite Data Assimilation](https://www.jcsda.org/).
 
  * [Publications](/publications/)
  * [Github projects list](/projects/)
