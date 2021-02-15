@@ -50,11 +50,11 @@ Publications using RPT software:
 
 ## MexIFace - Cross-platform C++ / Malab object-oriented MEX interface library and CMake build system
 [![MexIFace structure](/assets/images/mexiface_diagram.png){:width="450px"}{:style="float: right;margin-right: 7px;margin-top: 7px;"}](/assets/images/mexiface_diagram.png)
-The [MexIFace](https://markjolah.github.io/MexIFace) library class provides a flexible means of wrapping a complex C++ library into a Matlab class via Matlab's MEX function extension method.  Ordinary Matlab C/C++ plugins are called MEX libraries and can only provide a simple function interface.
+The [MexIFace](https://markjolah.github.io/MexIFace) interface library provides a flexible means of wrapping a complex C++ library into a Matlab class via Matlab's MEX function extension method.  Ordinary Matlab C/C++ plugins are called *MEX* libraries and can only provide a simple function interface.
 
-Interfaces using the [`MexIFace`](https://markjolah.github.io/MexIFace/classmexiface_1_1MexIFace.html) base class emulate a full object-based interface.  These hybrid C++/Matlab objects have Matlab methods and properties that effect state and perform computations in C++.
+Interfaces using the [`MexIFace`](https://markjolah.github.io/MexIFace/classmexiface_1_1MexIFace.html) base class emulate a full object-based interface.  These hybrid C++/Matlab objects have Matlab methods and properties that affect state and perform computations in C++.
 
-MexIFace is primarily designed to support high-performance numerical code, and uses the [Armadillo](http://arma.sourceforge.net/docs.html) matrix libraries to provide a computationally rich C++ object model while also allowing direct access to data stored in matlab array objects.  MexIFace supports OpenMP parallelization and detection and linking of 64-bit integer versions of BLAS and LAPACK libraries as required by Matlab.
+MexIFace is primarily designed to support high-performance numerical code, and uses the [Armadillo](http://arma.sourceforge.net/docs.html) matrix libraries to provide a computationally rich C++ object model while also allowing direct access to data stored in matlab array objects.  MexIFace supports OpenMP parallelization and linking of 64-bit integer versions of BLAS and LAPACK libraries as required by Matlab.
  * [MexIFace project site](https://markjolah.github.io/MexIFace)
  * [MexIFace github repository](https://github.com/markjolah/MexIFace#mexiface-)
 
@@ -63,9 +63,9 @@ MexIFace is primarily designed to support high-performance numerical code, and u
 **T**riangular **U**nstructured **M**esh with **B**ezier elements in a **L**agrangian **E**nvironment
 ![Tumble](/assets/images/tumble.png)
 
-Tumble is an mesh-geometry framework for fully [Lagrangian](https://en.wikiversity.org/wiki/Nonlinear_finite_elements/Lagrangian_and_Eulerian_descriptions) finite element, [Navier-Stokes](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) fluid flow simulation.  In a Lagrangian mesh, the elements move with the fluid they represent.  This causes them to deform over time.  We handle this by using curved elements with [Bezier](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) edges.  The TUMBLE package is responsible for moving the mesh elements, and running a sequence of cleaning phases to maintain mesh quality.  This includes flipping and re-interpolating elements to maintain the [Delaunay property](https://en.wikipedia.org/wiki/Delaunay_triangulation).
+Tumble is a mesh geometry framework for representing fully [Lagrangian](https://en.wikiversity.org/wiki/Nonlinear_finite_elements/Lagrangian_and_Eulerian_descriptions) finite element simulations of [Navier-Stokes](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) fluid flow.  In a Lagrangian mesh, the elements move with the fluid they represent.  This causes elements to deform over time.  We handle this by using curved elements with [Bezier](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) edges.  The *TUMBLE* package is responsible for moving the mesh elements, and running a sequence of cleaning phases to maintain mesh quality.  This includes flipping and re-interpolating elements to maintain the [Delaunay property](https://en.wikipedia.org/wiki/Delaunay_triangulation).
 
-* Part of the [Sangria Project](http://www.cs.cmu.edu/~sangria/) at Carnegie Mellon, which encompassed several research groups targeting advanced parallel geometric and numerical algorithms and software for simulating complex flows with dynamic interfaces.
+* Funded by the [Sangria Project](http://www.cs.cmu.edu/~sangria/) at Carnegie Mellon, which encompassed several computer science research groups targeting advanced parallel geometric and numerical algorithms and software for simulating complex flows with dynamic interfaces.
 * [Tumble Project site](http://www.cs.cmu.edu/~sangria/tumble/index.html)
 * [Tumble Documentation](http://www.cs.cmu.edu/~sangria/tumble/doc/index.html)
 * Publications:
