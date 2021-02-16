@@ -6,12 +6,15 @@ title: About Me
 
 I'm a computer scientist, mathematician and software engineer.  My research has previously focused on high-performance computational software for data processing, machine learning, statistical parameter inference, and stochastic simulation in scientific applications.
 
-Currently I'm a software engineer at the [(JCSDA) Joint Center for Satellite Data Assimilation](https://www.jcsda.org/).
+Currently I'm a software engineer at the [(JCSDA) Joint Center for Satellite Data Assimilation](https://www.jcsda.org/) working on the JEDI global weather model data assimilation project.  My research focuses on performance profiling and parallel algorithm development for MPI and OpenMP weather data assimilation on HPC resources.
 
  * [Publications](/publications/)
  * [Github projects list](/projects/)
+ * [CV](/assets/pdf/MarkJOlah_CV.pdf)
 
-# Featured Projects
+---
+
+# Featured Open Source Projects
 ## Mappel - **M**aximum **A** **P**osteriori **P**oint **E**mitter **L**ocalization
 [![Mappel estimation objective](/assets/images/mappel_goal.png){:width="500px"}{:style="float: right;margin-right: 7px;margin-top: 7px;"}](/assets/images/mappel_goal.png)
 [Mappel](https://markjolah.github.io/Mappel) is an object-oriented image processing library for [super-resolution localization](https://en.wikipedia.org/wiki/Super-resolution_microscopy#Localization_microscopy) of Gaussian point emitters in [fluorescence microscopy](https://en.wikipedia.org/wiki/Fluorescence_microscope#Sub-diffraction_techniques) applications.

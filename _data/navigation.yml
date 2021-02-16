@@ -6,8 +6,8 @@ main:
     url: /projects/
   - title: "Publications"
     url: /publications/
-  #- title: "CV"
-    #url: /assets/pdf/MarkJOlah_CV.pdf
+  - title: "CV"
+    url: /assets/pdf/MarkJOlah_CV.pdf
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
